@@ -1,0 +1,69 @@
+# =============================================
+# HAMS Project - .gitignore
+# =============================================
+
+# === Dependencies ===
+/node_modules/
+**/node_modules/
+vendor/
+**/vendor/
+
+# === Environment & Configuration ===
+.env
+.env.*.local
+
+# Database config - contains sensitive credentials
+# php/config.php
+
+# Example config should be committed
+!php/config.example.php
+
+# === Logs & Temporary Files ===
+*.log
+logs/
+cache/
+temp/
+tmp/
+
+# === OS Generated Files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === PHP Specific ===
+.phpunit.result.cache
+.php_cs.cache
+composer.lock   # Only ignore if you want to manage it manually
+*.php~          # Backup files
+
+# === Web Server Files ===
+.htaccess
+.htpasswd
+user.ini
+
+# === Development Tools ===
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+
+# === Build & Dist ===
+build/
+dist/
+public/build/
+
+# === Database Backups ===
+*.sql
+*.sql.gz
+*.bak
+
+# === Ignore everything in these folders ===
+/storage/*
+!/storage/.gitkeep
+
+# =============================================
