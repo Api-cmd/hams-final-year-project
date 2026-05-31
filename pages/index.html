@@ -1,0 +1,20 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Login Success - HAMS</title>
+        
+    </head>
+    <body>
+        <div class="success-box">
+            <h1>Login Successful!</h1>
+            <div class="info">
+                <strong>Name:</strong> <?php echo htmlspecialchars($user['full_name']); ?><br>
+                <strong>Role:</strong> <?php echo htmlspecialchars($user['role']); ?><br>
+                <strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?>
+            </div>
+           
+        </div>
+    </body>
+    </html>
+    
